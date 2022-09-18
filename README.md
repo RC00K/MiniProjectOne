@@ -1,10 +1,10 @@
 # **INF601 - Advanced Programing in Python**
 Ryder Cook
-## **_Mini Project 1_**
-## Description
+## **Mini Project 1**
+## _Description_
 This program collects the closing price of 5 of your favorite stock tickers for the last 10 trading days.
 The stocks are graphed and placed in a folder called charts as PNG files.
-## Execution Instruction
+## _Execution Instruction_
 1. Clone or download repository
 2. Install necessary packages
 
