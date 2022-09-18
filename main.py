@@ -12,9 +12,10 @@ ticker_names = ["AAPL", "GOOGL", "BTC-USD", "TSLA", "META"]
 # Collect data from last ten days
 data = yf.download(tickers=ticker_names, start="2022-09-07", end="2022-09-17")
 
+
 # Save plot as png in new folder
 def new_direct(direct):
-    # Make a folder
+    # Only make folder if folder doesn't exists
     if not os.path.exists(direct):
         os.mkdir(direct)
 
@@ -30,9 +31,7 @@ def draw_charts(tickers):
     new_direct(chart_dir)
     for ticker in tickers:
         ticker_price = np.array(closing_prices(ticker))
-        x = np.linspace(0.1, 2 * np.pi, 41)
-        y = np.exp(np.sin(x))
-        plt.stem(ticker_price)
+        plt.plot(ticker_price)
         # Fancy chart output
         plt.title(f"{ticker} Stock Price the Last 10 Days")
         plt.xlabel("Day")
