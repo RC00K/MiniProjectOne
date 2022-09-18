@@ -7,6 +7,6 @@ The stocks are graphed and placed in a folder called charts as PNG files.
 ## Execution Instruction
 1. Clone or download repository
 2. Install necessary packages 
-   ###### pip install -r requirements.txt
+   ##### pip install -r requirements.txt
 3. Run the script
-   ###### python ./main.py
+   ##### python ./main.py
